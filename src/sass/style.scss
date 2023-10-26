@@ -73,10 +73,11 @@ body {
 	}
 
 	&__nav-list-item a {
-		font-size: 1.6rem;
+		font-size: 2rem;
 		text-decoration: none;
 		color: $textColor;
 		transition: color 0.2s;
+		
 	}
 
 	&__nav-list-item a:hover {
@@ -221,6 +222,7 @@ body {
 	.features {
 		margin-top: 3em;
 		&__header {
+			margin-top: 3em;
 			font-size: 3rem;
 			font-weight: 300;
 			color: $thirdColor;
@@ -231,7 +233,7 @@ body {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			margin: 8em 0;
+			margin: 5em 0;
 			width: 100%;
 		}
 
@@ -239,14 +241,10 @@ body {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			padding: 2em 5em;
 			margin-top: 3em;
-			padding: 3em;
-			width: 300px;
 			text-align: center;
-			border: 2px solid $thirdColor;
-			border-radius: 8px;
 		}
-
 
 		&__feature-icon {
 			width: 100px;
