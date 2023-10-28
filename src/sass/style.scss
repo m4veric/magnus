@@ -77,7 +77,6 @@ body {
 		text-decoration: none;
 		color: $textColor;
 		transition: color 0.2s;
-		
 	}
 
 	&__nav-list-item a:hover {
@@ -219,6 +218,7 @@ body {
 			height: 300px;
 		}
 	}
+
 	.features {
 		margin-top: 3em;
 		&__header {
@@ -243,6 +243,7 @@ body {
 			align-items: center;
 			padding: 2em 5em;
 			margin-top: 3em;
+			width: 300px;
 			text-align: center;
 		}
 
@@ -262,6 +263,29 @@ body {
 			font-size: 1.6rem;
 			font-weight: normal;
 		}
+	}
+}
+
+// about us
+
+.aboutus {
+	margin-top: 100px;
+	&__info-box {
+		padding: 2em;
+	}
+
+	&__heading {
+		font-size: 3rem;
+		font-weight: 300;
+		color: $thirdColor;
+	}
+
+	&__text-box {
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 1.7em;
+		font-size: 1.8rem;
+		margin: 3em 0;
 	}
 }
 
