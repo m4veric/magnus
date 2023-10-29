@@ -301,11 +301,20 @@ body {
 	border-top: 1px solid $secondColor;
 
 	&__info-box {
-		margin: 2em 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+	}
+
+	&__info-logo {
+		width: 250px;
+	}
+
+	&__info-logo,
+	&__info-box-media,
+	&__info-box-menu {
+		margin: 3em 0;
 	}
 
 	&__info-text,
@@ -395,7 +404,7 @@ body {
 			&__feature-box {
 				display: flex;
 				flex-direction: column;
-				width: 300px;
+				width: 250px;
 			}
 
 			&__container-text {
