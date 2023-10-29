@@ -221,6 +221,7 @@ body {
 
 	.features {
 		margin-top: 3em;
+
 		&__header {
 			margin-top: 3em;
 			font-size: 3rem;
@@ -249,6 +250,7 @@ body {
 
 		&__feature-icon {
 			width: 100px;
+			font-weight: lighter;
 			color: $secondColor;
 		}
 

@@ -17,10 +17,12 @@ const paths = {
 	sass: './src/sass/**/*.scss',
 	js: './src/js/**/*.js',
 	img: './src/img/*',
+	svg: './src/svg/*.svg',
 	dist: './dist',
 	sassDest: './dist/css',
 	jsDest: './dist/js',
 	imgDest: './dist/img',
+	svgDest: './dist/img/svg',
 }
 
 function sassCompiler(done) {
@@ -69,6 +71,11 @@ function imgConverter(done) {
 	done()
 }
 
+function addSvgImage(done) {
+	src(paths.svg).pipe(dest(paths.svgDest))
+	done()
+}
+
 function cleanStuff(done) {
 	src(paths.dist, { read: false }).pipe(clean())
 	done()
@@ -97,6 +104,7 @@ const mainFunctions = parallel(
 	handleKit,
 	sassCompiler,
 	javaScript,
-	imgConverter
+	imgConverter,
+	addSvgImage
 )
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
