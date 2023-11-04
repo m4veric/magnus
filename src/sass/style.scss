@@ -308,6 +308,20 @@ body {
 		display: flex;
 		flex-direction: column;
 	}
+
+	&__info-logo {
+		width: 300px;
+	}
+
+	&__info-box-menu {
+		margin-top: 3em;
+	}
+
+	&__info-text {
+		display: flex;
+		align-items: center;
+		font-size: 2rem;
+	}
 }
 
 // media
