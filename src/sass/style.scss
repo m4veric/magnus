@@ -26,6 +26,11 @@ body {
 	padding: 0 1em;
 }
 
+.underline {
+	width: 100%;
+	height: 1px;
+	background-color: $secondColor;
+}
 // navigation
 
 .navbar {
@@ -297,43 +302,11 @@ body {
 // footer
 
 .footer {
-	margin-top: 3em;
-	border-top: 1px solid $secondColor;
+	margin: 2em 0.5em;
 
 	&__info-box {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-	}
-
-	&__info {
-		font-size: 1.8rem;
-	}
-
-	&__info-logo {
-		width: 250px;
-	}
-
-	&__info-text {
-		text-align: center;
-		padding: 1em;
-		font-size: 1.8rem;
-	}
-
-	&__info-media {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	&__info-media--social {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	
-	&__icon {
-		height: 15px;
 	}
 }
 
@@ -419,34 +392,6 @@ body {
 				height: 100%;
 				padding: 1em;
 			}
-		}
-	}
-
-	.footer {
-		&__info-box {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		&__info-text,
-		&__info-media {
-			text-align: left;
-			font-size: 1.3rem;
-		}
-
-		&__info-media {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: row;
-		}
-
-		&__info-media-box {
-			display: flex;
-			align-items: start;
-			flex-direction: column;
 		}
 	}
 }
