@@ -14,6 +14,7 @@ html {
 }
 
 body {
+	min-height: 100vh;
 	background-color: $mainColor;
 	font-family: 'Roboto', sans-serif;
 	color: $textColor;
@@ -427,6 +428,8 @@ body {
 // footer
 
 .footer {
+	position: sticky;
+	top: 100%;
 	&__info-box {
 		display: flex;
 		flex-direction: column;
