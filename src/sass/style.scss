@@ -346,6 +346,39 @@ body {
 	}
 }
 
+// portfolio
+
+.portfolio {
+	margin-top: 100px;
+
+	&__container {
+		padding: 2em;
+	}
+
+	&__heading {
+		font-size: 3rem;
+		font-weight: 300;
+		color: $thirdColor;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 1.7em;
+		font-size: 1.8rem;
+		margin: 3em 0;
+	}
+
+	&__video-box {
+		width: 100%;
+	}
+
+	&__video {
+		width: 100%;
+		height: 300px;
+	}
+}
+
 // footer
 
 .footer {
@@ -422,8 +455,7 @@ body {
 	.header {
 		height: 600px;
 		background-image: url('/dist/img/logo-big.jpg');
-g
-		&__img {
+		g &__img {
 			width: 50%;
 		}
 	}
@@ -468,11 +500,19 @@ g
 			}
 		}
 	}
+
 	.aboutus {
 		&__team-photo {
 			&--last {
 				width: 50%;
 			}
+		}
+	}
+
+	.portfolio {
+		&__video {
+			width: 100%;
+			height: 450px;
 		}
 	}
 	.footer {
@@ -522,6 +562,13 @@ g
 			&--last {
 				width: 45%;
 			}
+		}
+	}
+
+	.portfolio {
+		&__video {
+			width: 100%;
+			height: 500px;
 		}
 	}
 }
