@@ -24,7 +24,6 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
-	padding: 0 1em;
 }
 
 .underline {
@@ -32,6 +31,13 @@ body {
 	height: 1px;
 	background-color: $secondColor;
 }
+
+.heading {
+	font-size: 3rem;
+	font-weight: 300;
+	color: $thirdColor;
+}
+
 // navigation
 
 .navbar {
@@ -39,6 +45,7 @@ body {
 	top: 0;
 	display: flex;
 	align-items: center;
+	padding: 0 1em;
 	height: 100px;
 	width: 100%;
 	background-color: $mainColor;
@@ -190,12 +197,6 @@ body {
 			margin: 8em 0;
 		}
 
-		&__heading {
-			font-size: 3rem;
-			font-weight: 300;
-			color: $thirdColor;
-		}
-
 		&__text {
 			font-size: 1.8rem;
 			font-weight: 300;
@@ -226,14 +227,7 @@ body {
 	}
 
 	.features {
-		margin-top: 3em;
-
-		&__header {
-			margin-top: 3em;
-			font-size: 3rem;
-			font-weight: 300;
-			color: $thirdColor;
-		}
+		margin-top: 5em;
 
 		&__feature-icon {
 			width: 100px;
@@ -325,22 +319,16 @@ body {
 // about us
 
 .aboutus {
-	margin-top: 100px;
+	margin-top: 12em;
+
 	&__info-box {
 		padding: 2em;
-	}
-
-	&__heading {
-		font-size: 3rem;
-		font-weight: 300;
-		color: $thirdColor;
 	}
 
 	&__text-box {
 		font-size: 1.8rem;
 		font-weight: 300;
 		line-height: 1.7em;
-		font-size: 1.8rem;
 		margin: 3em 0;
 	}
 
@@ -395,17 +383,12 @@ body {
 // portfolio
 
 .portfolio {
-	margin-top: 100px;
+	margin-top: 12em;
 
 	&__container {
 		padding: 2em;
 	}
 
-	&__heading {
-		font-size: 3rem;
-		font-weight: 300;
-		color: $thirdColor;
-	}
 
 	&__text {
 		font-size: 1.8rem;
@@ -430,6 +413,7 @@ body {
 .footer {
 	position: sticky;
 	top: 100%;
+
 	&__info-box {
 		display: flex;
 		flex-direction: column;
