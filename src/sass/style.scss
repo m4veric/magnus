@@ -33,17 +33,17 @@ body {
 }
 
 .heading {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: 300;
 	color: $thirdColor;
 }
 
 .section-margin {
-	margin-top: 12em;
+	margin-top: 10em;
 }
 
 .section-padding {
-	padding: 4em;
+	padding: 7em 4em;
 }
 // navigation
 
@@ -197,11 +197,8 @@ body {
 
 // main
 .main {
+	// margin-top: 4em;
 	.meet-us {
-		&__text-box {
-			margin-top: 5em;
-		}
-
 		&__text {
 			font-size: 1.8rem;
 			font-weight: 300;
@@ -222,12 +219,13 @@ body {
 		}
 
 		&__video-box {
-			margin-top: 4em;
+			margin: 8em 0;
+			height: 450px;
 		}
 
 		&__video {
 			width: 100%;
-			height: 300px;
+			height: 100%;
 		}
 	}
 
@@ -387,11 +385,10 @@ body {
 	}
 
 	&__text {
+		margin: 3em 0;
 		font-size: 1.8rem;
 		font-weight: 300;
 		line-height: 1.7em;
-		font-size: 1.8rem;
-		margin: 3em 0;
 	}
 
 	&__video-box {
@@ -401,6 +398,17 @@ body {
 	&__video {
 		width: 100%;
 		height: 300px;
+	}
+}
+
+// contact
+
+.contact {
+	&__text {
+		margin: 3em 0;
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 1.7em;
 	}
 }
 
@@ -500,7 +508,7 @@ body {
 			}
 
 			&__video {
-				height: 500px;
+				height: 700px;
 			}
 
 			&__feature-icon {
