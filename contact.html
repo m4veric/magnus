@@ -46,25 +46,30 @@
                 <h1 class="heading">Kontakt</h1>
                 <p class="contact__text">Jeżeli wiesz już jak gramy i kim jesteśmy i masz jeszcze jakieś pytania lub
                     chcesz nas wybrać to śmiało wybierz dogodną dla siebie formę kontaktu</p>
-                <form action="mail.php" class="contact__form-box">
-                    <div class="contact__form">
-                        <label for="">Imię</label>
-                        <input type="text">
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <p>+48 000 000 000</p>
+                        <p>zespolmagnuslive@kontakt.pl</p>
+                        <p>Gostyń</p>
                     </div>
-                    <div class="contact__form">
-                        <label for="">Nazwisko (opcjonalnie)</label>
-                        <input type="text">
-                    </div>
-                    <div class="contact__form">
-                        <label for="">e-mail</label>
-                        <input type="mail">
-                    </div>
-                    <div class="contact__form">
-                        <label for="">Wiadomość</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </form>
+                    <form action="mail.php" class="contact__form-box">
+                        <div class="contact__box">
+                            <input type="text" id="name" name="name" required placeholder="Imię">
+                        </div>
+                        <div class="contact__box">
+                            <input type="text" id="name" name="surname" placeholder="Nazwisko(opcjonalnie)">
+                        </div>
+                        <div class="contact__box">
+                            <input type="email" id="email" name="email" required placeholder="e-mail">
+                        </div>
+                        <div class="contact__box">
+                            <textarea name="msq" id="msq" required placeholder="Wiadomość"></textarea>
+                        </div>
+                        <button class="contact__btn">Wyślij</button>
+                    </form>
+                    <p class="msg-status"></p>
 
+                </div>
             </div>
     </section>
 
