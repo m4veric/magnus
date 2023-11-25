@@ -421,6 +421,7 @@ body {
 
 	&__form-box {
 		width: 100%;
+		max-width: 500px;
 	}
 
 	&__box {
@@ -516,12 +517,19 @@ body {
 
 	&__img {
 		margin: 0 0.5em;
-		width: 45px;
+		width: 35px;
 		transition: opacity 0.2s;
 
 		&:hover {
 			opacity: 0.5;
 		}
+	}
+
+	&__copyright-info {
+		padding: 2em;
+		font-size: 1.4rem;
+		text-align: center;
+		color: #9d9d9d;
 	}
 }
 
@@ -624,6 +632,19 @@ body {
 			height: 450px;
 		}
 	}
+
+	.contact {
+		&__container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+		&__info {
+			order: 1;
+		}
+	}
+
 	.footer {
 		&__info-box {
 			display: flex;
