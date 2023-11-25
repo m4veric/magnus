@@ -126,12 +126,10 @@ body {
 
 		&--second {
 			top: 75%;
-			// transition: 0.3s;
 		}
 
 		&--third {
 			top: 25%;
-			// transition: 0.3s;
 		}
 	}
 }
@@ -148,13 +146,13 @@ body {
 			}
 			&--second {
 				transform: rotate(-45deg);
-				top: 35%;
-				left: 25%;
+				top: 45%;
+				left: 12%;
 			}
 			&--third {
 				transform: rotate(45deg);
-				left: 25%;
-				top: 35%;
+				left: 12%;
+				top: 45%;
 			}
 		}
 	}
@@ -197,17 +195,16 @@ body {
 	// margin-top: 4em;
 	.meet-us {
 		&__text {
+			margin: 3em 0;
 			font-size: 1.8rem;
 			font-weight: 300;
 			line-height: 1.7em;
-			font-size: 1.8rem;
-			margin: 3em 0;
 		}
 
 		&__link {
+			font-size: 1.8rem;
 			color: $textColor;
 			text-decoration: none;
-			font-size: 1.8rem;
 			transition: color 0.2s;
 		}
 
