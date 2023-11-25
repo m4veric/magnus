@@ -517,6 +517,11 @@ body {
 	&__img {
 		margin: 0 0.5em;
 		width: 45px;
+		transition: opacity 0.2s;
+
+		&:hover {
+			opacity: 0.5;
+		}
 	}
 }
 
