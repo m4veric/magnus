@@ -19,19 +19,19 @@ const addCurrentYear = () => {
 	spanYear.innerText = year
 }
 
-const checkForm = (input) => {
-	console.log(input)
+// const checkForm = (input) => {
+// 	console.log(input)
 
-	if (input.value === '') {
-		console.log('bład')
-	}
-}
+// 	if (input.value === '') {
+// 		console.log('bład')
+// 	}
+// }
 
-sendBtn.addEventListener('click', (el) => {
-	el.preventDefault()
+// sendBtn.addEventListener('click', (el) => {
+// 	el.preventDefault()
 
-	checkForm([inputName, inputSurname, inputEmail, message])
-})
+// 	checkForm([inputName, inputSurname, inputEmail, message])
+// })
 
 addCurrentYear()
 navBtn.addEventListener('click', activeMobileNav)
