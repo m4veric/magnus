@@ -56,21 +56,28 @@
                                 alt="">Gostyń</p>
                     </div>
                     <form action="mail.php" class="contact__form-box">
-                        <div class="contact__box">
+                        <div class="contact__box ">
                             <input type="text" id="name" name="name" required placeholder="Imię">
+                            <p class="contact__error-text">Podaj swoje imię</p>
                         </div>
                         <div class="contact__box">
                             <input type="text" id="name" name="surname" placeholder="Nazwisko (opcjonalnie)">
+
                         </div>
                         <div class="contact__box">
                             <input type="email" id="email" name="email" required placeholder="E-mail">
+                            <p class="contact__error-text">Podaj poprawny adres e-mail</p>
                         </div>
                         <div class="contact__box">
-                            <textarea name="msq" id="msq" required placeholder="Wiadomość"></textarea>
+                            <textarea name="msg" id="msg" required placeholder="Wiadomość"></textarea>
+                            <p class="contact__error-text">Wprowadź treść wiadomości</p>
                         </div>
                         <button class="contact__btn">Wyślij</button>
+                        <div class="contact__popup">
+                            <p class="contact__popup-text">Formularz został poprawnie wysłany!</p>
+                            <button class="contact__popup-button">Zamknij</button>
+                        </div>
                     </form>
-                    <p class="msg-status"></p>
 
                 </div>
             </div>

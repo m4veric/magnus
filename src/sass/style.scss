@@ -438,12 +438,24 @@ body {
 		margin-bottom: 1em;
 	}
 
+	&__error-text {
+		display: none;
+		margin: 0.5em;
+		font-size: 1.4rem;
+	}
+
 	&__box input,
 	&__box textarea {
 		padding: 1em;
 		font-size: 1.6rem;
 		font-family: inherit;
 		border-radius: 8px;
+	}
+
+	&__box.error-text input,
+	&__box.error-text textarea {
+		background-color: $thirdColor;
+		visibility: hidden;
 	}
 
 	&__box textarea {
@@ -483,6 +495,46 @@ body {
 	}
 	&__btn:hover::before {
 		left: 0;
+	}
+
+	&__popup {
+		position: absolute;
+		top: -150px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 200px;
+		width: 450px;
+		padding: 1em;
+		background-color: $mainColor;
+		border: 2px solid $thirdColor;
+		border-radius: 8px;
+		transition: top 0.2s;
+	}
+
+	&__popup.show-popup {
+		top: 150px;
+	}
+
+	&__popup-text,
+	&__popup-button {
+		margin: auto;
+	}
+
+	&__popup-text {
+		font-size: 2rem;
+	}
+
+	&__popup-button {
+		padding: 1em 2em;
+		background: none;
+		border: 1px solid $thirdColor;
+		border-radius: 8px;
+		color: $textColor;
+		cursor: pointer;
 	}
 }
 
