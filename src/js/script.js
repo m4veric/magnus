@@ -19,6 +19,8 @@ const addCurrentYear = () => {
 	spanYear.innerText = year
 }
 
+addCurrentYear()
+
 const showError = (input, msg) => {
 	const formBox = input.parentElement
 	const errorMsg = formBox.querySelector('.contact__error-text')
@@ -40,10 +42,11 @@ const checkForm = (input) => {
 	})
 }
 
-sendBtn.addEventListener('click', (e) => {
+const verifyForm = (e) => {
 	e.preventDefault()
 	checkForm([inputName, inputEmail, message])
-})
+}
 
-addCurrentYear()
+
 navBtn.addEventListener('click', activeMobileNav)
+sendBtn.addEventListener('click', verifyForm)
