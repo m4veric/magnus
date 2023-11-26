@@ -8,7 +8,6 @@ const message = document.querySelector('#msg')
 const sendBtn = document.querySelector('.contact__btn')
 const popup = document.querySelector('.contact__popup')
 const popupBtn = document.querySelector('.contact__popup-button')
-const contactBox = document.querySelector('.contact__box')
 
 const activeMobileNav = () => {
 	naviList.classList.toggle('active')
@@ -19,6 +18,32 @@ const addCurrentYear = () => {
 	const year = new Date().getFullYear()
 	spanYear.innerText = year
 }
+
+const showError = (input, msg) => {
+	const formBox = input.parentElement
+	const errorMsg = formBox.querySelector('.contact__error-text')
+	formBox.classList.add('error')
+}
+
+const deleteError = (input, msg) => {
+	const formBox = input.parentElement
+	formBox.classList.remove('error')
+}
+
+const checkForm = (input) => {
+	input.forEach((inp) => {
+		if (inp.value === '') {
+			showError(inp, inp.placeholder)
+		} else {
+			deleteError(inp, inp.placeholder)
+		}
+	})
+}
+
+sendBtn.addEventListener('click', (e) => {
+	e.preventDefault()
+	checkForm([inputName, inputEmail, message])
+})
 
 addCurrentYear()
 navBtn.addEventListener('click', activeMobileNav)

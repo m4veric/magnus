@@ -441,7 +441,8 @@ body {
 	&__error-text {
 		display: none;
 		margin: 0.5em;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+		color: $formErrorColor;
 	}
 
 	&__box input,
@@ -452,10 +453,12 @@ body {
 		border-radius: 8px;
 	}
 
-	&__box.error-text input,
-	&__box.error-text textarea {
-		background-color: $thirdColor;
-		visibility: hidden;
+	&__box.error input,
+	&__box.error textarea {
+		background-color: $formErrorColor;
+	}
+	&__box.error &__error-text {
+		display: block;
 	}
 
 	&__box textarea {
