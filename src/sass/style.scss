@@ -213,13 +213,12 @@ body {
 		}
 
 		&__video-box {
-			margin: 8em 0;
-			height: 450px;
+			margin-top: 8em;
 		}
 
 		&__video {
 			width: 100%;
-			height: 100%;
+			height: 300px;
 		}
 	}
 
@@ -271,11 +270,12 @@ body {
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			margin: 3em 0;
 		}
 
 		&__second-heading {
-			font-size: 2.5rem;
-			font-weight: 400;
+			font-size: 2.3rem;
+			font-weight: normal;
 		}
 
 		&__portfolio-link {
@@ -567,7 +567,7 @@ body {
 		padding: 1em;
 		font-size: 1.8rem;
 		text-decoration: none;
-		color: $textColor;
+		color: #727272;
 		transition: color 0.2s;
 
 		&:hover {
@@ -577,6 +577,10 @@ body {
 
 	&__info-logo {
 		width: 250px;
+	}
+
+	&__link {
+		text-decoration: none;
 	}
 
 	&__img {

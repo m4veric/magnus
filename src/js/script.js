@@ -42,11 +42,37 @@ const checkForm = (input) => {
 	})
 }
 
+const verifyMail = (email) => {
+	const re =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+	if (re.test(email.value)) {
+		deleteError(email)
+	} else {
+		showError(email)
+	}
+}
+
+const checkErrors = () => {
+	const formBoxes = document.querySelectorAll('.contact__box')
+	let errors = 0
+	formBoxes.forEach((el) => {
+		if (el.classList.contains('error')) {
+			errors++
+		}
+	})
+
+	if (errors === 0) {
+		popup.classList.add('show-popup')
+	}
+}
+
 const verifyForm = (e) => {
 	e.preventDefault()
 	checkForm([inputName, inputEmail, message])
+	verifyMail(email)
+	checkErrors()
 }
-
 
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
