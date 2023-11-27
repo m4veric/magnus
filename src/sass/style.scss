@@ -501,7 +501,7 @@ body {
 	}
 
 	&__popup {
-		position: absolute;
+		position: fixed;
 		top: -250px;
 		left: 50%;
 		transform: translateX(-50%);
@@ -521,7 +521,7 @@ body {
 	}
 
 	&__popup.show-popup {
-		top: 550px;
+		top: 150px;
 	}
 
 	&__popup-text,

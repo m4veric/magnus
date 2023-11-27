@@ -53,18 +53,12 @@ const verifyMail = (email) => {
 	}
 }
 
-const checkErrors = () => {
-	const formBoxes = document.querySelectorAll('.contact__box')
-	let errors = 0
-	formBoxes.forEach((el) => {
-		if (el.classList.contains('error')) {
-			errors++
-		}
-	})
+if (document.location.search === '?mail_status=sent') {
+	popup.classList.add('show-popup')
+}
 
-	if (errors === 0) {
-		popup.classList.add('show-popup')
-	}
+const closePopup = () => {
+	popup.classList.remove('show-popup')
 }
 
 const verifyForm = (e) => {
@@ -76,3 +70,4 @@ const verifyForm = (e) => {
 
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
+popupBtn.addEventListener('click', closePopup)
