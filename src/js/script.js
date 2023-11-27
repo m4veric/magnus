@@ -65,7 +65,6 @@ const verifyForm = (e) => {
 	e.preventDefault()
 	checkForm([inputName, inputEmail, message])
 	verifyMail(email)
-	checkErrors()
 }
 
 navBtn.addEventListener('click', activeMobileNav)

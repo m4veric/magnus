@@ -442,7 +442,7 @@ body {
 		display: none;
 		margin: 0.5em;
 		font-size: 1.2rem;
-		color: $formErrorColor;
+		color: $secondColor;
 	}
 
 	&__box input,
@@ -455,7 +455,7 @@ body {
 
 	&__box.error input,
 	&__box.error textarea {
-		background-color: $formErrorColor;
+		border: 2px solid $secondColor;
 	}
 	&__box.error &__error-text {
 		display: block;
