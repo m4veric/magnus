@@ -2,7 +2,6 @@ const navBtn = document.querySelector('.navbar__nav-btn')
 const naviList = document.querySelector('.navbar__nav-list')
 const spanYear = document.querySelector('.footer__copy-year')
 const inputName = document.querySelector('#name')
-const inputSurname = document.querySelector('#surname')
 const inputEmail = document.querySelector('#email')
 const message = document.querySelector('#msg')
 const sendBtn = document.querySelector('.contact__btn')
@@ -19,25 +18,24 @@ const addCurrentYear = () => {
 	spanYear.innerText = year
 }
 
-addCurrentYear()
-
-const showError = (input, msg) => {
+const showError = (input) => {
 	const formBox = input.parentElement
-	const errorMsg = formBox.querySelector('.contact__error-text')
 	formBox.classList.add('error')
 }
 
-const deleteError = (input, msg) => {
+const deleteError = (input) => {
 	const formBox = input.parentElement
 	formBox.classList.remove('error')
 }
 
-const checkForm = (input) => {
-	input.forEach((inp) => {
+const inputs = [inputName, inputEmail, message]
+
+const checkForm = () => {
+	inputs.forEach((inp) => {
 		if (inp.value === '') {
-			showError(inp, inp.placeholder)
+			showError(inp)
 		} else {
-			deleteError(inp, inp.placeholder)
+			deleteError(inp)
 		}
 	})
 }
@@ -63,10 +61,11 @@ const closePopup = () => {
 
 const verifyForm = (e) => {
 	e.preventDefault()
-	checkForm([inputName, inputEmail, message])
+	checkForm(inputs)
 	verifyMail(email)
 }
 
+addCurrentYear()
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
 popupBtn.addEventListener('click', closePopup)
