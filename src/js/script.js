@@ -1,6 +1,6 @@
 const navBtn = document.querySelector('.navbar__nav-btn')
 const naviList = document.querySelector('.navbar__nav-list')
-const naviListItems = document.querySelectorAll('.navbar__nav-list-item')
+const navSpeciaLink = document.querySelector('.navbar__nav-link--first')
 const spanYear = document.querySelector('.footer__copy-year')
 const inputName = document.querySelector('#name')
 const inputEmail = document.querySelector('#email')
@@ -10,10 +10,10 @@ const popup = document.querySelector('.contact__popup')
 const popupBtn = document.querySelector('.contact__popup-button')
 const navLink = document.querySelectorAll('.navbar__nav-link')
 
-const activeLink = window.location.pathname
+const activeLink = window.location.href
 
 navLink.forEach((link) => {
-	if (link.href.includes(`${activeLink}`)) {
+	if (link.href === activeLink) {
 		link.classList.add('active')
 	}
 })

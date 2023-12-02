@@ -102,7 +102,7 @@ body {
 		color: $thirdColor;
 	}
 
-	&__nav-link.active {
+	&__nav-link:is(:active, :visited).active {
 		color: $thirdColor;
 	}
 
