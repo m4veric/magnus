@@ -89,7 +89,8 @@ body {
 		z-index: 20;
 	}
 
-	&__nav-list-item a {
+	&__nav-list-item,
+	&__nav-link {
 		padding: 1em 2em;
 		font-size: 2rem;
 		text-decoration: none;
@@ -97,7 +98,11 @@ body {
 		transition: color 0.2s;
 	}
 
-	&__nav-list-item a:hover {
+	&__nav-link:hover {
+		color: $thirdColor;
+	}
+
+	&__nav-link.active {
 		color: $thirdColor;
 	}
 

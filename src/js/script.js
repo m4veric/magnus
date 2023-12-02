@@ -1,5 +1,6 @@
 const navBtn = document.querySelector('.navbar__nav-btn')
 const naviList = document.querySelector('.navbar__nav-list')
+const naviListItems = document.querySelectorAll('.navbar__nav-list-item')
 const spanYear = document.querySelector('.footer__copy-year')
 const inputName = document.querySelector('#name')
 const inputEmail = document.querySelector('#email')
@@ -7,6 +8,15 @@ const message = document.querySelector('#msg')
 const sendBtn = document.querySelector('.contact__btn')
 const popup = document.querySelector('.contact__popup')
 const popupBtn = document.querySelector('.contact__popup-button')
+const navLink = document.querySelectorAll('.navbar__nav-link')
+
+const activeLink = window.location.pathname
+
+navLink.forEach((link) => {
+	if (link.href.includes(`${activeLink}`)) {
+		link.classList.add('active')
+	}
+})
 
 const activeMobileNav = () => {
 	naviList.classList.toggle('active')
@@ -66,6 +76,7 @@ const verifyForm = (e) => {
 }
 
 addCurrentYear()
+
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
 popupBtn.addEventListener('click', closePopup)
