@@ -15,7 +15,7 @@
     <div class="wrapper">
         <div class="navbar__nav">
             <div class="navbar__nav-logo">
-                <a href="index.html#"> <img class="navbar__nav-img" src="./dist/img/magnus-logo-color.png" alt=""></a>
+                <a href="/"> <img class="navbar__nav-img" src="./dist/img/magnus-logo-color.png" alt=""></a>
             </div>
             <button class="navbar__nav-btn">
                 <span class="navbar__nav-btn-line navbar__nav-btn-line--first"></span>
@@ -24,7 +24,7 @@
             </button>
             <ul class="navbar__nav-list">
                 <li class="navbar__nav-list-item">
-                    <a class="navbar__nav-link" href="index.html">Home</a>
+                    <a class="navbar__nav-link" href="/">Home</a>
                 </li>
                 <li class="navbar__nav-list-item">
                     <a class="navbar__nav-link" href="aboutus.html">O nas</a>
@@ -48,12 +48,18 @@
                     chcesz nas wybrać to śmiało wybierz dogodną dla siebie formę kontaktu</p>
                 <div class="contact__container">
                     <div class="contact__info">
-                        <p class="contact__info-item"><img class="contact__icon" src="./dist/img/svg/phone.svg"
-                                alt="">+48 000 000 000</p>
-                        <p class="contact__info-item"><img class="contact__icon" src="./dist/img/svg/mail.svg"
-                                alt="">zespolmagnuslive@kontakt.pl</p>
-                        <p class="contact__info-item"><img class="contact__icon" src="./dist/img/svg/location.svg"
-                                alt="">Gostyń</p>
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/phone.svg" alt="">
+                            <a class="contact__link" href="tel: +48-504-572-206">+48 504 572 206</a>
+                        </p>
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/mail.svg" alt="">
+                            <a class="contact__link"
+                                href="mailto: zespolmagnuslive@gmail.pl">zespolmagnuslive@gmail.pl</a>
+                        </p>
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/location.svg" alt="">Gostyń
+                        </p>
                     </div>
                     <form action="/dist/php/mail.php" class="contact__form-box" method="post">
                         <div class="contact__box ">

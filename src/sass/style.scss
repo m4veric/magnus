@@ -329,6 +329,17 @@ body {
 		margin: 3em 0;
 	}
 
+	&__contact-link {
+		text-decoration: none;
+		color: $textColor;
+		font-weight: 400;
+		transition: color, 0.2s;
+
+		&:hover {
+			color: $thirdColor;
+		}
+	}
+
 	&__team-container {
 		display: flex;
 		align-items: center;
@@ -427,6 +438,16 @@ body {
 		font-size: 1.8rem;
 	}
 
+	&__link {
+		color: $textColor;
+		text-decoration: none;
+		transition: color, 0.2s;
+
+		&:hover {
+			color: $thirdColor;
+		}
+	}
+
 	&__form-box {
 		margin-top: 4em;
 		width: 100%;
@@ -460,7 +481,8 @@ body {
 	}
 
 	&__box.error input,
-	&__box.error textarea {
+	&__box.error textarea,
+	&__box input#checkbox {
 		border: 2px solid $secondColor;
 	}
 	&__box.error &__error-text {
@@ -504,6 +526,22 @@ body {
 	}
 	&__btn:hover::before {
 		left: 0;
+	}
+
+	&__box input#checkbox {
+		margin-right: 1em;
+		width: 20px;
+		height: 20px;
+	}
+
+	&__check-container {
+		display: flex;
+		align-items: center;
+		margin-top: 1em;
+	}
+
+	&__checkbox-info {
+		font-size: 1.2rem;
 	}
 
 	&__popup {
