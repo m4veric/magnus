@@ -2,7 +2,8 @@
 
 ## Welcome in my first professional commercial project!
 
-Zespół Magnus Live is my first client who trust me and ordered creat a website.
+
+Zespół Magnus Live is my first client who trusted me and ordered creat a website.
 
 Current view you can see [here](https://m4veric.github.io/magnus/index.html)
 
