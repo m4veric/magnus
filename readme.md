@@ -1,4 +1,4 @@
-# Hi Everyone!:wave:
+# Hi Everyone! :wave:
 
 ## Welcome in my first professional commercial project!
 
