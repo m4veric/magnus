@@ -639,6 +639,63 @@ body {
 	}
 }
 
+
+
+
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	bottom: 0;
+	padding: 2em;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	background-color: #fff;
+	font-size: 2rem;
+	opacity: 0;
+	transform: translateY(100%);
+	animation: show-coockie 0.5s 0.5s forwards;
+}
+
+.cookie-box:before {
+	content: '';
+	position: absolute;
+	top: -100px;
+	left: -10px;
+	height: 200px;
+	width: 200px;
+	background-image: url('/png/cookie-monster-clipart.png');
+	background-size: cover;
+}
+
+.cookie-btn {
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	font-size: 1.4rem;
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: #ebebeb;
+	transition: background-color 0.2s;
+}
+
+.cookie-btn:hover {
+	background-color: #cfcece;
+}
+
+@keyframes show-coockie {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+
 // media
 
 @media (min-width: 768px) {

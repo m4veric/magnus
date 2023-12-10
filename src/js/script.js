@@ -10,6 +10,22 @@ const popup = document.querySelector('.contact__popup')
 const popupBtn = document.querySelector('.contact__popup-button')
 const navLink = document.querySelectorAll('.navbar__nav-link')
 const checkbox = document.querySelector('.contact__check-checkbox')
+const cookieBox = document.querySelector('.cookie-box')
+const cookieBtn = document.querySelector('.cookie-btn')
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookie')
+	if (cookieEaten) {
+		cookieBox.classList.add('hide')
+	}
+}
+
+showCookie()
+
+const hideCookieAlert = () => {
+	localStorage.setItem('cookie', 'true')
+	cookieBox.classList.add('hide')
+}
 
 const activeLink = window.location.href
 
@@ -28,6 +44,8 @@ const addCurrentYear = () => {
 	const year = new Date().getFullYear()
 	spanYear.innerText = year
 }
+
+addCurrentYear()
 
 const showError = (input) => {
 	const formBox = input.parentElement
@@ -70,6 +88,13 @@ const verifyMail = (email) => {
 	}
 }
 
+const verifyForm = (e) => {
+	e.preventDefault()
+	checkForm(inputs)
+	verifyMail(email)
+	vefiryCheck(checkbox)
+}
+
 if (document.location.search === '?mail_status=sent') {
 	popup.classList.add('show-popup')
 }
@@ -78,15 +103,7 @@ const closePopup = () => {
 	popup.classList.remove('show-popup')
 }
 
-const verifyForm = (e) => {
-	e.preventDefault()
-	checkForm(inputs)
-	verifyMail(email)
-	vefiryCheck(checkbox)
-}
-
-addCurrentYear()
-
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
 popupBtn.addEventListener('click', closePopup)
+cookieBtn.addEventListener('click', hideCookieAlert)
