@@ -9,6 +9,7 @@ const sendBtn = document.querySelector('.contact__btn')
 const popup = document.querySelector('.contact__popup')
 const popupBtn = document.querySelector('.contact__popup-button')
 const navLink = document.querySelectorAll('.navbar__nav-link')
+const checkbox = document.querySelector('.contact__check-checkbox')
 
 const activeLink = window.location.href
 
@@ -50,6 +51,14 @@ const checkForm = () => {
 	})
 }
 
+const vefiryCheck = () => {
+	if (checkbox.checked === false) {
+		showError(checkbox)
+	} else {
+		deleteError(checkbox)
+	}
+}
+
 const verifyMail = (email) => {
 	const re =
 		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -73,6 +82,7 @@ const verifyForm = (e) => {
 	e.preventDefault()
 	checkForm(inputs)
 	verifyMail(email)
+	vefiryCheck(checkbox)
 }
 
 addCurrentYear()

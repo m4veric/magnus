@@ -481,11 +481,11 @@ body {
 	}
 
 	&__box.error input,
-	&__box.error textarea,
-	&__box input#checkbox {
+	&__box.error textarea {
 		border: 2px solid $secondColor;
 	}
-	&__box.error &__error-text {
+	&__box.error &__error-text,
+	&__check.error &__error-text {
 		display: block;
 	}
 
@@ -524,24 +524,17 @@ body {
 		transition: left 0.1s;
 		z-index: -1;
 	}
+
+	&__check-checkbox {
+		width: 15px;
+		height: 15px;
+	}
+
+	&__check label {
+		font-size: 1.2rem;
+	}
 	&__btn:hover::before {
 		left: 0;
-	}
-
-	&__box input#checkbox {
-		margin-right: 1em;
-		width: 20px;
-		height: 20px;
-	}
-
-	&__check-container {
-		display: flex;
-		align-items: center;
-		margin-top: 1em;
-	}
-
-	&__checkbox-info {
-		font-size: 1.2rem;
 	}
 
 	&__popup {
