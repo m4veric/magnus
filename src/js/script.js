@@ -27,6 +27,8 @@ const hideCookieAlert = () => {
 	cookieBox.classList.add('hide')
 }
 
+cookieBtn.addEventListener('click', hideCookieAlert)
+
 const activeLink = window.location.href
 
 navLink.forEach((link) => {
@@ -106,4 +108,3 @@ const closePopup = () => {
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
 popupBtn.addEventListener('click', closePopup)
-cookieBtn.addEventListener('click', hideCookieAlert)
