@@ -40,6 +40,7 @@ navLink.forEach((link) => {
 const activeMobileNav = () => {
 	naviList.classList.toggle('active')
 	navBtn.classList.toggle('second-active')
+	document.body.classList.toggle('sticky-body')
 }
 
 const addCurrentYear = () => {
