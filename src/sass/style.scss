@@ -638,6 +638,33 @@ body {
 		color: #9d9d9d;
 	}
 }
+// policy private
+
+.privacy-policy {
+	&__header {
+		font-size: 2.3rem;
+		font-weight: lighter;
+		color: $thirdColor;
+		margin: 1em 0;
+	}
+
+	&__box {
+		margin-top: 7em;
+		font-size: 1.6rem;
+		font-weight: lighter;
+	}
+
+	&__box p,
+	&__box ol {
+		margin-bottom: 0.4em;
+	}
+
+	&__box ol {
+		margin-left: 1em;
+	}
+}
+
+// coockie alert
 
 .hide {
 	display: none;
