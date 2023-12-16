@@ -724,6 +724,37 @@ body {
 	}
 }
 
+//404 page
+
+.wrong-page {
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__main-title {
+		color: $thirdColor;
+		font-weight: normal;
+	}
+
+	&__main-title {
+		font-size: 15rem;
+	}
+
+	&__second-title {
+		margin-top: 1em;
+		font-weight: normal;
+		font-size: 4rem;
+	}
+
+	&__text {
+		margin-top: 1em;
+		font-size: 2rem;
+	}
+}
+
 // media
 
 @media (min-width: 768px) {
