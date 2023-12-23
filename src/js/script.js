@@ -90,20 +90,20 @@ const verifyMail = (email) => {
 		showError(email)
 	}
 }
-
-const verifyForm = (e) => {
-	e.preventDefault()
-	checkForm(inputs)
-	verifyMail(email)
-	vefiryCheck(checkbox)
-}
+console.log(document.location.search)
 
 if (document.location.search === '?mail_status=sent') {
 	popup.classList.add('show-popup')
+
+	setTimeout(() => {
+		popup.classList.remove('show-popup')
+	}, 3000)
 }
 
-const closePopup = () => {
-	popup.classList.remove('show-popup')
+const verifyForm = (e) => {
+	checkForm(inputs)
+	verifyMail(email)
+	vefiryCheck(checkbox)
 }
 
 navBtn.addEventListener('click', activeMobileNav)

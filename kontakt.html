@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona nie istnieje 🤨</title>
-    <link rel="icon" type="image/png" href="/dist/img/favicon.png">
+    <title>Kontakt</title>
     <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link rel="icon" type="image/png" href="/dist/img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <nav class="navbar">
     <div class="wrapper">
         <div class="navbar__nav">
@@ -40,16 +41,56 @@
     </div>
 </nav>
 
-    <section class="wrong-page section-margin section-padding">
+    <section class="conatact section-margin">
         <div class="wrapper">
-            <div class="wrong-page__box">
-                <h1 class="wrong-page__main-title">404</h1>
-                <h2 class="wrong-page__second-title">Coś tu nie gra 🤕</h2>
-                <p class="wrong-page__text">Strona o podanym adresie nie istnieje</p>
-            </div>
-        </div>
-    </section>
+            <div class="section-padding">
+                <h1 class="heading">Kontakt</h1>
+                <p class="contact__text">Masz jeszcze jakieś pytania związane z oprawą muzyczną? Skontaktuj się z nami!
+                    Jesteśmy do Twojej dyspozycji</p>
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/phone.svg" alt="">
+                            <a class="contact__link" href="tel: +48-504-572-206">+48 504 572 206</a>
+                        </p>
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/mail.svg" alt="">
+                            <a class="contact__link"
+                                href="mailto: zespolmagnuslive@gmail.pl">zespolmagnuslive@gmail.pl</a>
+                        </p>
+                        <p class="contact__info-item">
+                            <img class="contact__icon" src="./dist/img/svg/location.svg" alt=""><a class="contact__link"
+                                href="https://maps.app.goo.gl/zkDu1C7G6wPCqyb8A" target="_blank"
+                                rel="noopener">Gostyń</a>
+                        </p>
+                    </div>
+                    <form class="contact__form-box" action="mail.php" method="post">
+                        <div class="contact__box ">
+                            <input type="text" id="name" name="name" required placeholder="Imię">
+                            <p class="contact__error-text">Podaj swoje imię</p>
+                        </div>
+                        <div class="contact__box">
+                            <input type="email" id="email" name="email" required placeholder="E-mail">
+                            <p class="contact__error-text">Podaj poprawny adres e-mail</p>
+                        </div>
+                        <div class="contact__box ">
+                            <textarea name="msg" id="msg" required placeholder="Wiadomość"></textarea>
+                            <p class="contact__error-text">Wprowadź treść wiadomości</p>
+                        </div>
+                        <div class="contact__check">
+                            <input type="checkbox" id="checkbox" class="contact__check-checkbox" required>
+                            <label for="checkbox">Zapoznałem się z polityką prywatności</label>
+                            <p class="contact__error-text">Zaznacz wymagane zgody</p>
+                        </div>
+                        <button class="contact__btn">Wyślij</button>
+                        <div class="contact__popup">
+                            <p class="contact__popup-text">Formularz został poprawnie wysłany!</p>
+                        </div>
+                    </form>
 
+                </div>
+            </div>
+    </section>
     <div class="cookie-box">
         <p>Nasza strona korzysta z ciasteczek!</p>
         <button class="cookie-btn">Akceptuj🍪</button>
@@ -88,6 +129,7 @@
     <p class="footer__copyright-info"> &copy <span class="footer__copy-year"></span> Zespół Magnus Live. Wszelkie prawa
         zastrzeżone.</p>
 </footer>
+
     <script src="./dist/js/script.min.js"></script>
 </body>
 

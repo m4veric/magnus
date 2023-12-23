@@ -6,47 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link rel="icon" type="image/png" href="/dist/img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar">
-    <div class="wrapper">
-        <div class="navbar__nav">
-            <div class="navbar__nav-logo">
-                <a href="index.html"> <img class="navbar__nav-img" src="./dist/img/magnus-logo-color.png" alt=""></a>
-            </div>
-            <button class="navbar__nav-btn">
-                <span class="navbar__nav-btn-line navbar__nav-btn-line--first"></span>
-                <span class="navbar__nav-btn-line navbar__nav-btn-line--second"></span>
-                <span class="navbar__nav-btn-line navbar__nav-btn-line--third"></span>
-            </button>
-            <ul class="navbar__nav-list">
-                <li class="navbar__nav-list-item">
-                    <a class="navbar__nav-link" href="index.html">Home</a>
-                </li>
-                <li class=" navbar__nav-list-item">
-                    <a class="navbar__nav-link" href="aboutus.html">O nas</a>
-                </li>
-                <li class="navbar__nav-list-item">
-                    <a class="navbar__nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="navbar__nav-list-item">
-                    <a class="navbar__nav-link" href="contact.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
+    <!-- @include nav.kit -->
 
     <section class="conatact section-margin">
         <div class="wrapper">
             <div class="section-padding">
                 <h1 class="heading">Kontakt</h1>
-                <p class="contact__text">Masz jeszcze jakieś pytania związane z oprawną muzyczną? Skontaktuj się z nami!
+                <p class="contact__text">Masz jeszcze jakieś pytania związane z oprawą muzyczną? Skontaktuj się z nami!
                     Jesteśmy do Twojej dyspozycji</p>
                 <div class="contact__container">
                     <div class="contact__info">
@@ -65,7 +37,7 @@
                                 rel="noopener">Gostyń</a>
                         </p>
                     </div>
-                    <form class="contact__form-box" action="/dist/php/mail.php" method="post">
+                    <form class="contact__form-box" action="mail.php" method="post">
                         <div class="contact__box ">
                             <input type="text" id="name" name="name" required placeholder="Imię">
                             <p class="contact__error-text">Podaj swoje imię</p>
@@ -79,14 +51,13 @@
                             <p class="contact__error-text">Wprowadź treść wiadomości</p>
                         </div>
                         <div class="contact__check">
-                            <input type="checkbox" class="contact__check-checkbox">
+                            <input type="checkbox" id="checkbox" class="contact__check-checkbox" required>
                             <label for="checkbox">Zapoznałem się z polityką prywatności</label>
                             <p class="contact__error-text">Zaznacz wymagane zgody</p>
                         </div>
                         <button class="contact__btn">Wyślij</button>
                         <div class="contact__popup">
                             <p class="contact__popup-text">Formularz został poprawnie wysłany!</p>
-                            <button class="contact__popup-button">Zamknij</button>
                         </div>
                     </form>
 
@@ -98,38 +69,7 @@
         <button class="cookie-btn">Akceptuj🍪</button>
     </div>
 
-    <footer class="footer">
-    <div class="underline"></div>
-    <div class="wrapper">
-        <div class="footer__info-box">
-            <div class="footer__logo">
-                <img class="footer__info-logo" src="./dist/img/magnus-logo-white.png" alt="">
-            </div>
-            <div class="footer__info-box-menu">
-                <a class="footer__info-text" href="portfolio.html">Portfolio</a>
-                <a class="footer__info-text" href="contact.html">Kontakt</a>
-                <a class="footer__info-text" href="policy.html">Polityka prywatności</a>
-            </div>
-            <div class="footer__social-media">
-                <a href="https://www.facebook.com/zespolmagnuslive/" class="footer__link" target="_blank"
-                    rel="noopener">
-                    <img class="footer__img" src="./dist/img/svg/facebook.svg" alt="">
-                </a>
-                <a href="https://www.instagram.com/zespolmagnuslive/" class="footer__link" target="_blank"
-                    rel="noopener">
-                    <img class="footer__img" src="./dist/img/svg/instagram.svg" alt="">
-                </a>
-                <a href="https://www.youtube.com/@zespolmagnuslive/featured" class="footer__link" target="_blank"
-                    rel="noopener">
-                    <img class="footer__img" src="./dist/img/svg/youtube.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="underline"></div>
-    <p class="footer__copyright-info"> &copy <span class="footer__copy-year"></span> Zespół Magnus Live. Wszelkie prawa
-        zastrzeżone.</p>
-</footer>
+    <!-- @include footer.kit -->
 
     <script src="./dist/js/script.min.js"></script>
 </body>
