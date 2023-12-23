@@ -20,7 +20,7 @@ Next step will be create and add privacy policy and then we will choose hosting 
 Finally we're going release website! :rocket:
 
 
-##Update 23.12.2023 :christmas_tree:
+## Update 23.12.2023 :christmas_tree:
 
 Houston, we don't have a problem. 
 I added privacy policy and added and configured hosting. In last stage of work I finded problem with contact form send. But now, everything is well! 
