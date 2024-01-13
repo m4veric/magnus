@@ -40,7 +40,6 @@ navLink.forEach((link) => {
 const activeMobileNav = () => {
 	naviList.classList.toggle('active')
 	navBtn.classList.toggle('second-active')
-	document.body.classList.toggle('sticky-body')
 }
 
 const addCurrentYear = () => {
@@ -108,4 +107,3 @@ const verifyForm = (e) => {
 
 navBtn.addEventListener('click', activeMobileNav)
 sendBtn.addEventListener('click', verifyForm)
-popupBtn.addEventListener('click', closePopup)

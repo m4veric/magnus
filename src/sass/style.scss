@@ -689,17 +689,6 @@ body {
 	z-index: 100;
 }
 
-.cookie-box:before {
-	content: '';
-	position: absolute;
-	top: -100px;
-	left: -10px;
-	height: 200px;
-	width: 200px;
-	background-image: url('/png/cookie-monster-clipart.png');
-	background-size: cover;
-}
-
 .cookie-btn {
 	margin-top: 3em;
 	padding: 0.5em 1em;
